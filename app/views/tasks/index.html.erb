@@ -1,10 +1,13 @@
+<div id="header" class="text-center">
 <h1>Voici toutes vos tâches</h1>
 
-<ul>
+<div class="my_task">
+<ul class="text-left">
   <% @tasks.each do |task| %>
   <li> <%= link_to task.name, task_path(task)%> </li>
   <% end %>
 </ul>
+</div>
 
 <%= link_to "Ajoutez une tache", new_task_path %>
-
+</div>

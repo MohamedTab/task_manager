@@ -13,3 +13,21 @@
  *= require_tree .
  *= require_self
  */
+#header {
+  background-image: url('img.jpg');
+  padding-top: 200px;
+  padding-bottom: 300px;
+  color: white;
+}
+
+ul li{
+  list-style: none;
+  color: white;
+}
+.my_task {
+  margin : 0 280px;
+  font-size: 20px;
+}
+ .btn {
+  color: white;
+ }

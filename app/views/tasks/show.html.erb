@@ -1,5 +1,8 @@
 <h1>Detail de votre tâche</h1>
 
 <h2><%= @task.name %></h2>
-<p><%= @task.date %> </p>
-<p><%= @task.content %> </p>
+
+<%= link_to "modifiez votre tâche", edit_task_path %>
+<%= link_to "supprimez votre tâche", task_path,
+ method: :delete,
+ data: { confirm: 'Are you sure?' } %>
